@@ -1,5 +1,5 @@
 import { Statuses } from 'typings/generalTypes';
-import { rootReducer } from './store';
+import { persistedReducer } from './store';
 
 export interface QuizAnswers {
     id: number | undefined;
@@ -33,5 +33,5 @@ export interface QuizState {
     racquets: Racquets[];
 }
 
-export type AppState = ReturnType<typeof rootReducer>;
+export type AppState = ReturnType<typeof persistedReducer>;
 

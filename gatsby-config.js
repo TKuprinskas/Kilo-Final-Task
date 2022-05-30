@@ -10,7 +10,7 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-image`,
-        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-react-helmet-async`,
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
