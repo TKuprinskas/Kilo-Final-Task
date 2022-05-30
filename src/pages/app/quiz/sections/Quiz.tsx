@@ -162,7 +162,7 @@ export const QuizInfo: React.FC = () => {
                 width={{ _: '100%', mobile: '90%' }}
                 justifyContent="flex-start"
                 alignItems="flex-end"
-                margin={{ _: '0 0 0 6.25rem', mobile: '0 0 0 1.25rem' }}
+                margin={{ _: '0 0 0 6.25rem', mobile: '0 0 2rem 1.25rem' }}
             >
                 {currentQuestion > 0 && (
                     <PreviousButton previousQuestion={previousQuestion} />

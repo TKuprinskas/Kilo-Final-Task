@@ -7,7 +7,7 @@ const Quiz: React.FC = () => (
         <Helmet>
             <title>Quiz</title>
         </Helmet>
-        <QuizInfo />;
+        <QuizInfo />
     </>
 );
 

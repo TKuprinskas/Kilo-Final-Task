@@ -15,7 +15,7 @@ export const StarRating = () => {
                         color={index <= rating ? 'orange' : 'white'}
                         onClick={() => setRating(index)}
                     >
-                        <Box height="1.5rem" width="1.5rem">
+                        <Box height="1rem" width="1rem">
                             &#9733;
                         </Box>
                     </Button>

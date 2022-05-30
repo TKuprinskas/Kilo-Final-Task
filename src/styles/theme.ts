@@ -74,7 +74,7 @@ export const theme = {
         modal: 10,
         loader: 11,
     },
-    breakpoints: ['24rem', '48rem', '80rem'] as unknown as Breakpoints,
+    breakpoints: ['20rem', '48rem', '80rem'] as unknown as Breakpoints,
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512] as unknown as typeof Space,
     typography: {
         h1: {
