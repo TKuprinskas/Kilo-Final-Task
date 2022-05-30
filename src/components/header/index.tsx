@@ -51,7 +51,7 @@ export const Header: React.FC = () => {
         <SectionWrapper backgroundColor="orange">
             <FlexWrapper
                 flexDirection={{ _: 'row', mobile: 'column' }}
-                marginTop={{ _: '0', mobile: '-30px' }}
+                marginTop={{ _: '0', mobile: '-1.875rem' }}
             >
                 {isTablet ? (
                     ''
@@ -79,7 +79,7 @@ export const Header: React.FC = () => {
                         return (
                             <Box
                                 key={name}
-                                marginTop={{ _: '0', mobile: '10px' }}
+                                marginTop={{ _: '0', mobile: '0.625rem' }}
                             >
                                 <Link
                                     to={link}
@@ -87,7 +87,7 @@ export const Header: React.FC = () => {
                                         textDecoration: 'none',
                                         color: 'white',
                                         fontFamily: 'Roboto',
-                                        fontSize: '16px',
+                                        fontSize: '1rem',
                                         fontWeight: '500',
                                     }}
                                 >
@@ -104,7 +104,7 @@ export const Header: React.FC = () => {
                         _: 'space-between',
                         mobile: 'space-around',
                     }}
-                    marginTop={{ _: '0', mobile: '20px' }}
+                    marginTop={{ _: '0', mobile: '1.25rem' }}
                 >
                     {socialItems.map((item) => {
                         const { name, link, icon } = item;

@@ -22,6 +22,7 @@ const borders = {
     secondary: '1px solid #E7FAFE',
     white: '1px solid #ffffff',
     black: '1px solid #000000',
+    orange: `1px solid ${colors.orange}`,
 };
 
 export const theme = {

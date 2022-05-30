@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
     Typography,
     ContentWrapper,
@@ -12,6 +13,9 @@ const Success: React.FC = () => {
     const { isTablet } = useQuery();
     return (
         <>
+            <Helmet>
+                <title>Thank you for your order</title>
+            </Helmet>
             <SectionWrapper
                 backgroundImage="background"
                 minHeight="95vh"
@@ -21,8 +25,8 @@ const Success: React.FC = () => {
                 <ContentWrapper
                     backgroundColor="blurry"
                     borderRadius="br8"
-                    marginTop="100px"
-                    padding="20px"
+                    marginTop="6.25rem"
+                    padding="1.25rem"
                 >
                     <Image src="tennispoint" width="100%" />
                     <Typography type="h1" color="white" fontStyle="italic">
@@ -32,7 +36,7 @@ const Success: React.FC = () => {
                         type="h3"
                         color="white"
                         fontStyle="italic"
-                        padding={isTablet ? '20px 0' : ''}
+                        padding={isTablet ? '1.25rem 0' : ''}
                     >
                         The entire Teniso Partneris team thanks you for your
                         trust
@@ -41,7 +45,7 @@ const Success: React.FC = () => {
                         type="h4"
                         color="white"
                         fontStyle="italic"
-                        padding={isTablet ? '20px 0 0 0' : '50px 0 0 0'}
+                        padding={isTablet ? '1.25rem 0 0 0' : '3.125rem 0 0 0'}
                     >
                         We will contact you shortly to confirm your order
                         details and estimated delivery date.
@@ -50,7 +54,7 @@ const Success: React.FC = () => {
                         type="h5"
                         color="white"
                         fontStyle="italic"
-                        padding={isTablet ? '20px 0' : ''}
+                        padding={isTablet ? '1.25rem 0' : ''}
                     >
                         If you have any questions, please contact us at the
                         following email:{' '}

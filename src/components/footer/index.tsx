@@ -24,7 +24,7 @@ const socialItems = [
 export const Footer: React.FC = () => (
     <FlexWrapper
         backgroundColor="orange"
-        padding="12px"
+        padding="0.75rem"
         justifyContent="center"
     >
         <Typography type="body16" color="white">
@@ -34,7 +34,7 @@ export const Footer: React.FC = () => (
             width={{ _: '5%', mobile: '30%' }}
             alignItems="center"
             justifyContent="space-between"
-            margin={{ _: '0 50px', mobile: '0 10px' }}
+            margin={{ _: '0 3.125rem', mobile: '0 0.625rem' }}
         >
             {socialItems.map((item) => {
                 const { name, link, icon } = item;

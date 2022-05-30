@@ -3,7 +3,7 @@ import { navigate } from 'gatsby-link';
 import { useSelector } from 'react-redux';
 import { selectRacquets } from 'state/selectors';
 import { Box, FlexWrapper, Image } from 'components';
-import { RacquetInfo } from '../elements/RacquetInfo';
+import { RacquetInfo } from './RacquetInfo';
 import { useQuery } from 'styles/breakpoints';
 
 export const Racquet: React.FC = () => {
@@ -12,6 +12,12 @@ export const Racquet: React.FC = () => {
     const [grip, setGrip] = useState<number>(0);
     const racquets = useSelector(selectRacquets);
     const [loaded, setLoaded] = useState<boolean>(false);
+
+    const isBrowser = typeof window !== 'undefined';
+
+    if (!isBrowser) {
+        return null;
+    }
 
     const params = new URLSearchParams(window.location.search);
     const racquetId = params.get('racquet');
@@ -23,7 +29,7 @@ export const Racquet: React.FC = () => {
     }, [racquets]);
 
     const handleBuyClick = () => {
-        navigate('/success');
+        navigate('/app/success');
     };
 
     const selectStrung = (id: number) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AccordionItemsList } from 'pages/checkout/elements/Info';
+import { AccordionItemsList } from 'pages/app/checkout/elements/Info';
 import AccordionItem from './AccordionItem';
 import { Typography } from 'components';
 import { ContentWrapper } from 'components/wrappers/ContentWrapper';

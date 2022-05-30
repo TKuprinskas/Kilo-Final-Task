@@ -12,9 +12,9 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
 
     return (
         <Box
-            padding="16px"
-            margin="8px 0"
-            border=" 1px solid rgba(0, 0, 0, 0.08)"
+            padding="1rem"
+            margin="0.5rem 0"
+            border=" 0.0625rem solid rgba(0, 0, 0, 0.08)"
             borderRadius="br16"
         >
             <FlexWrapper

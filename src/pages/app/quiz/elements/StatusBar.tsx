@@ -5,7 +5,7 @@ import {
     StatusBox,
     Type,
     Text,
-} from 'pages/quiz/elements';
+} from 'pages/app/quiz/elements';
 
 interface Props {
     isActive: number;

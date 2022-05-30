@@ -16,7 +16,7 @@ export const RacquetCard: React.FC = () => {
     }, []);
 
     const handleClick = (id: string | number | null) => {
-        navigate(`/checkout?racquet=${id}`);
+        navigate(`/app/checkout?racquet=${id}`);
     };
 
     if (!loaded) {

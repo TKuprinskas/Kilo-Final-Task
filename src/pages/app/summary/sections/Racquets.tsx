@@ -6,7 +6,7 @@ export const Racquets: React.FC = () => (
     <FlexWrapper
         width="75%"
         margin="0 auto 1.875rem auto"
-        borderBottom="1px solid orange"
+        borderBottom="orange"
         flexDirection={{ _: 'row', mobile: 'column' }}
     >
         <RacquetCard />

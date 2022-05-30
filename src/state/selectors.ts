@@ -7,5 +7,3 @@ export const selectQuizQuestions = (state: AppState) =>
 
 export const selectRacquets = (state: AppState) => state.quiz.racquets;
 
-export const selectRacquet = (state: AppState) => state.quiz.racquet;
-

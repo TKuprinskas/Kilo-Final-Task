@@ -42,7 +42,7 @@ export const QuizInfo: React.FC = () => {
         setIsLoading(true);
         dispatch(postQuizAnswers(answerData));
         setTimeout(() => {
-            navigate('/summary');
+            navigate('/app/summary');
         }, 3000);
     };
 

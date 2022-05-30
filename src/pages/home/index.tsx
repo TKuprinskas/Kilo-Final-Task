@@ -1,5 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby';
+import { Helmet } from 'react-helmet';
 import {
     SectionWrapper,
     Typography,
@@ -13,11 +14,14 @@ import { useQuery } from 'styles/breakpoints';
 const Home: React.FC = () => {
     const { isTablet } = useQuery();
     const handleClick = () => {
-        navigate('/quiz');
+        navigate('/app/quiz');
     };
 
     return (
         <>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <Header />
             <SectionWrapper
                 backgroundImage="background"

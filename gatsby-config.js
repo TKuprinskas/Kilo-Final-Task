@@ -2,14 +2,15 @@ const path = require('path');
 
 module.exports = {
     siteMetadata: {
-        title: `april2`,
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `Teniso Partneris`,
+        siteUrl: `https://www.raketes.tenisopartneris.lt`,
     },
     plugins: [
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-image`,
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
@@ -38,6 +39,16 @@ module.exports = {
             resolve: 'gatsby-plugin-resolve-src',
             options: {
                 srcPath: path.resolve(__dirname, 'src'),
+            },
+        },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Teniso Partneris`,
+                short_name: `Teniso Partneris`,
+                start_url: `/`,
+                display: `standalone`,
+                icon: `src/assets/images/tplogo.png`,
             },
         },
     ],

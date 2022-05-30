@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { QuizQuestions } from 'state/types';
 import { FlexWrapper, Box, Typography } from 'components';
-import { AnswerBox } from '../elements';
+import { AnswerBox } from '.';
 import { useQuery } from 'styles/breakpoints';
 
 interface Props {
